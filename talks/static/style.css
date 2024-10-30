@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", serif;
+    max-width: 100%;
+}
+body{
+    background: black;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    top: 0;
+    padding: 15px;
+    width: 100%;
+    background: black;
+    position: fixed;
+}
+nav h3{
+    font-family: "Rubik Wet Paint", serif;
+    font-weight: 400;
+}
+nav h3 span{
+    font-family: "Rubik Wet Paint", serif;
+    color: blue;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+}
+nav ul li{
+    list-style: none;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*hero-section styling*/
+.hero-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+.hero-section .img{
+    width: 50%;
+}
+.hero-section .text{
+    width: 50%;
+}
+.hero-section .text h3,
+h2{
+    font-family: "Oxanium", sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    
+}
+.hero-section .text p{
+    font-family: "Raleway", sans-serif;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+
+}
+.hero-section .text button{
+    border-style: none;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.hero-section .text button:hover{
+    background: grey;
+    transition: background 0.3s ease;
+
+}
+.hero-section .img img{
+    margin-top: 10px;
+}
