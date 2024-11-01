@@ -4,9 +4,9 @@
 
 <div class="hero-section">
     <div class="text">
-        <h2>SafeSpace,</h2>
+        <h2>Boys<span>Vault</span>,</h2>
             <h3>Real Conversations, Real Support.</h3>
-                <p>Every boy faces challenges, but no one has to face them alone. SafeSpace is a supportive community where you can share what's on your mind without fear or judgment.
+                <p>Every boy faces challenges, but no one has to face them alone. BoysVault is a supportive community where you can share what's on your mind without fear or judgment.
                      This is your place to connect with others who understand what you're going through and to find strength in shared experiences. 
                     Whether it's about school, family, friendships, or just feeling overwhelmed, you'll find people here who listen, support, and encourage each other.
                      At SafeSpace, we believe in lifting each other up and growing stronger—together.</P>
@@ -16,10 +16,67 @@
     </div>
     <div class='img'>
         {% load static %}
-        <img src="{% static 'images/satyam-pathak-1Qu2qJfyTko-unsplash.jpg' %}">
+        <img src="{% static 'images/rb_8014.png' %}">
+
+    </div>
+    </div>
+<!--About section-->
+<div class="title" id="bout">
+    <h2>About</h2>
+</div>
+<div class="about" id="about">
+    
+    <div id="img">
+        <img src="{% static 'images/Team spirit-amico.png' %}">
+
+</div>
+<div id="text">
+    <h2>Boys<span>Vault</span>,About Us...</h2>
+        <p>{% lorem 2 %}</p>
+
+</div>
+</div>
+<!--Testimonials section styling "community"-->
+<div class="title" id="testhead">
+    <h2>What Community Says</h2>
+</div>
+<div class="testimonials" id="community">
+    <div class="person">
+        <img src="{% static 'images/albert-dera-ILip77SbmOE-unsplash.jpg' %}">
+        <h2>Hervy Specter</h2>
+        <p><box-icon type='solid' name='quote-alt-left'></box-icon>{% lorem 1 %}<box-icon name='quote-alt-right' type='solid' ></box-icon></p>
+
+    </div>
+
+    <div class="person">
+        <img src="{% static 'images/dominique-jordan-cYgNxkwCEoI-unsplash.jpg' %}">
+        <h2>Mike Ross</h2>
+        <p><box-icon type='solid' name='quote-alt-left'></box-icon>{% lorem 1 %}<box-icon name='quote-alt-right' type='solid' ></box-icon></p>
+
+    </div>
+
+    <div class="person">
+        <img src="{% static 'images/elizeu-dias-2EGNqazbAMk-unsplash.jpg' %}">
+        <h2>Louis Litt</h2>
+        <p><box-icon type='solid' name='quote-alt-left'></box-icon>{% lorem 1 %}<box-icon name='quote-alt-right' type='solid' ></box-icon></p>
+
+    </div>
+
+    <div class="person">
+        <img src="{% static 'images/erik-lucatero-d2MSDujJl2g-unsplash.jpg' %}">
+        <h2>Paulo de Paul</h2>
+        <p><box-icon type='solid' name='quote-alt-left'></box-icon>{% lorem 1 %}<box-icon name='quote-alt-right' type='solid' ></box-icon></p>
+
+    </div>
+
+    <div class="person">
+        <img src="{% static 'images/where-is-pykh-_3vfugHP3Ro-unsplash.jpg' %}">
+        <h2>Reinhard Ofweneke</h2>
+        <p><box-icon type='solid' name='quote-alt-left'></box-icon>{% lorem 1 %}<box-icon name='quote-alt-right' type='solid' ></box-icon></p>
 
     </div>
 
 </div>
+
 
 {% endblock content %}

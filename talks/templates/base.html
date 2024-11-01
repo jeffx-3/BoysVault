@@ -1,19 +1,19 @@
 {% load static %}
 <head>
     
-    {% block title %} <title>SafeSpace|Let It Out</title>{% endblock title %}
+    {% block title %} <title>BoysVault|Let It Out</title>{% endblock title %}
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <link href="{% static "style.css" %}" rel="stylesheet">
 
 </head>
 
 <nav>
-    <h3>Safe<span>Space</span></h3>
+    <h3>Boys<span>Vault</span></h3>
         <ul>
-            <li><a href="#">About </a> </li>
-            <li><a href="#"> Community</a> </li>
+            <li><a href="#about">About </a> </li>
+            <li><a href="#community"> Community</a> </li>
             <li><a href="#">Blog </a> </li>
             <li><a href="#"> Let it Out</a> </li>
 
@@ -21,5 +21,56 @@
 </nav>
 {% block content %}
 
-
 {% endblock content %}
+
+{% block footer %}
+<div class="footer">
+    <footer>
+        <div class="logo-n-stuff">
+            <h2>Boys<span>Vault</span></h2>
+            <p> SOME SAFE PLACE, JUJA</p>
+            <p>P.O.Box 1234</p>
+            <p>KENYA</p>
+
+        </div>
+
+        <div class="useful-links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Impact report</a></li>
+
+            </ul>
+        
+
+        </div>
+
+
+        <div class="subscribe">
+            <h2> Subscribe</h2>
+            <input type="email" placeholder="enter email"></input>
+            <button type="submit">Subscribe</button>
+            <div class="socials">
+                <ul>
+                <li><a href="#"><box-icon name='facebook' type='logo' color="blue"></box-icon></a></li>
+                <li><a href="#"><box-icon name='twitter' type='logo' color="skyblue"></box-icon></a></li>
+                <li><a href="#"><box-icon name='youtube' type='logo' color="red"></box-icon></a></li>
+                <li><a href="#"><box-icon name='instagram' type='logo' color=" #bc2a8d"></box-icon></a></li>
+               
+
+                </ul>
+
+            </div>
+
+        </div>
+
+  
+
+
+</div>
+  </footer>
+
+{% endblock footer %}

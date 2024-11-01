@@ -5,7 +5,9 @@
     max-width: 100%;
 }
 body{
-    background: black;
+    background: white;
+    color: black;
+    
 }
 nav{
     display: flex;
@@ -25,7 +27,7 @@ nav h3{
 }
 nav h3 span{
     font-family: "Rubik Wet Paint", serif;
-    color: blue;
+    color: rgb(207, 105, 202);
     
 }
 nav ul{
@@ -54,8 +56,6 @@ nav ul li a{
     margin-left: 10%;
     margin-right: 10%;
     max-width: 100%;
-    background-color: black;
-    color: white;
     height: 100vh;
 }
 .hero-section .img{
@@ -64,8 +64,20 @@ nav ul li a{
 .hero-section .text{
     width: 50%;
 }
-.hero-section .text h3,
-h2{
+.hero-section .text h2{
+    font-family: "Rubik Wet Paint", serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.hero-section .text h2 span{
+    font-family: "Rubik Wet Paint", serif;
+    color: rgb(207, 105, 202);
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.hero-section .text h3{
     font-family: "Oxanium", sans-serif;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -82,8 +94,11 @@ h2{
 .hero-section .text button{
     border-style: none;
     padding: 12px;
+    background: rgb(207, 105, 202);
+    color: white;
     border-radius: 5px;
     margin-top: 10px;
+    cursor: pointer;
 }
 .hero-section .text button:hover{
     background: grey;
@@ -92,4 +107,164 @@ h2{
 }
 .hero-section .img img{
     margin-top: 10px;
+}
+.title{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/*About section styling*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: 20px;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 2rem;
+
+}
+.about #img{
+    max-width: 50%;
+
+}
+.about #img img{
+    border-radius: 20px;
+}
+
+.about #text{
+    max-width: 50%;
+}
+.about #text h2{
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+    font-family: "Rubik Wet Paint", serif;
+}
+.about #text h2 span{
+    color: rgb(207, 105, 202);
+    font-family: "Rubik Wet Paint", serif;
+}
+.about #text p{
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+
+}
+
+/*testimonials section styling*/
+.title #testhead{
+    margin-bottom: 0px;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    justify-content: center;
+    background: rgb(59, 92, 101,0.4);
+    padding: 50px;
+    
+
+}
+.testimonials img{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    object-fit: cover;
+    object-position: center;
+
+}
+.testimonials .person {
+    padding: 10px;
+}
+.testimonials .person h2{
+    font-family: "Oxanium", serif;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+}
+.testimonials .person p{
+    font-family: "Noto Sans", serif;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+/*footer styling*/
+.footer footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background: rgb(59, 92, 101);
+}
+.footer .logo-n-stuff h2{
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+    font-family: "Rubik Wet Paint", serif;
+
+}
+.footer .logo-n-stuff h2 span{
+    color: rgb(207, 105, 202);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+    font-family: "Rubik Wet Paint", serif;
+}
+.footer .logo-n-stuff p{
+    font-family: "Noto Sans", serif;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+.footer .useful-links h2{
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+
+}
+.footer .useful-links ul li{
+    list-style: none;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+
+}
+.footer .useful-links ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.footer .subscribe h2{
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+}
+.footer .subscribe input{
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.footer .subscribe button{
+    border-style: none;
+
+    padding: 7px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.footer .socials ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+.footer .socials ul li{
+    list-style: none;
 }
