@@ -159,32 +159,41 @@ nav ul li a{
 }
 .testimonials{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 30px;
     border-radius: 30px;
     justify-content: center;
-    background: rgb(59, 92, 101,0.4);
     padding: 50px;
     
 
 }
-.testimonials img{
-    height: 200px;
-    width: 200px;
-    border-radius: 200px;
+.testimonials .profile{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+}
+.testimonials .profile img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
     object-fit: cover;
     object-position: center;
 
 }
 .testimonials .person {
-    padding: 10px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.5);;
+    padding: 15px;
 }
 .testimonials .person h2{
     font-family: "Oxanium", serif;
     line-height: 1.2;
+    font-weight: 450;
     letter-spacing: 0.02em;
     margin-bottom: 5px;
 }
@@ -192,6 +201,7 @@ nav ul li a{
     font-family: "Noto Sans", serif;
     line-height: 1.4;
     letter-spacing: 0.05em;
+    margin-top: 5px;
 }
 
 /*footer styling*/
