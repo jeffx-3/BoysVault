@@ -1,0 +1,81 @@
+{% extends "feed_base.html" %}
+
+{% block feed %}
+<body>
+<div class="feed">
+
+    <div class="short-cuts">
+        <div class="ul">
+        <ul>
+            <li><box-icon name='dice-6' ></box-icon>For You</li><br>
+            <li><box-icon name='star' ></box-icon>Following</li><br>
+            <li><box-icon name='videos' type='solid' ></box-icon>Videos</li><br>
+            <li><box-icon name='bookmarks' ></box-icon>Saved</li><br>
+            <li><box-icon name='group' type='solid' ></box-icon>Clubs</li><br>
+            <li><button>POST<box-icon name='plus' ></box-icon></li></button><br>
+
+        </ul>
+
+    </div>
+        <h3>Recomended</h3>
+        {% load static %}
+        <ul class="img">
+            <li>
+                <img src="{% static 'images/where-is-pykh-_3vfugHP3Ro-unsplash.jpg' %}">
+                <p>@amerix</p>
+
+            
+            </li>
+            <li>
+                <img src="{% static 'images/where-is-pykh-_3vfugHP3Ro-unsplash.jpg' %}">
+                <p>@dear_son</p>
+            </li>
+            <li>
+                <img src="{% static 'images/where-is-pykh-_3vfugHP3Ro-unsplash.jpg' %}">
+                <p>@masculinity</p>
+            </li>
+            <li>
+                <img src="{% static 'images/where-is-pykh-_3vfugHP3Ro-unsplash.jpg' %}">
+                <p>@trump</p>
+            </li>
+            <li>
+                <img src="{% static 'images/where-is-pykh-_3vfugHP3Ro-unsplash.jpg' %}">
+                <p>@elonmusk</p>
+            </li>
+            <div class="settings">
+            <a href="#"><box-icon name='cog' ></box-icon> Settings</a>
+            </div>
+
+        </ul>
+
+        </div>
+
+
+
+        <div class="posts">
+
+        </div>
+
+
+
+        <div class="top-talks">
+
+        </div>
+
+
+</div>
+
+</body>
+
+
+{% endblock feed %}
+
+
+
+
+
+
+{% block footer %}
+
+
+{% endblock footer %}

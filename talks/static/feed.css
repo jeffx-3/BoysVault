@@ -1,0 +1,121 @@
+body{
+    background: #F0F8FF;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    top: 0;
+    padding: 10px;
+    width: 100%;
+    background: #F0F8FF;
+
+}
+nav h3{
+    font-family: "Rubik Wet Paint", serif;
+    font-weight: 400;
+    color: black;
+}
+nav h3 span{
+    font-family: "Rubik Wet Paint", serif;
+    color: rgb(207, 105, 202);
+    
+}
+
+nav .home-input-search{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .home-input-search a{
+    cursor: pointer;
+}
+nav .home-input-search input{
+    border-style: none;
+    border-radius: 12px;
+    width: 350px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 3px;
+
+}
+nav .home-input-search button{
+    border-style: none;
+    padding: 5px;
+    background: #F0F8FF;
+}
+nav .other-icons ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+/*feed styling*/
+.feed{
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+}
+.feed .short-cuts{
+    height: 100vh;
+    overflow: hidden;
+}
+.feed .short-cuts .ul{
+    height: 30%;
+}
+
+.feed .short-cuts .ul ul li{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    list-style: none;
+    
+
+}
+.feed .short-cuts ul li button{
+    display: inline-flex;
+    align-items: center;
+    border-style: none;
+    background:rgb(207, 105, 202);
+    border-radius: 7px;
+    padding: 12px;
+}
+.feed .short-cuts h3{
+    text-align: center;
+    margin-left: 10%;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.feed .short-cuts .img li{
+    display: flex;
+    margin-left: 10%;
+    gap: 0.5rem;
+    list-style: none;
+}
+.feed .short-cuts img{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+.feed .short-cuts hr{
+    border: 1px solid grey;
+    opacity: 0.3;
+    color: grey;
+}
+
+.feed .short-cuts .settings a{ 
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2px;
+    margin-left: 10%;
+    text-decoration: none;
+    color: black;
+}

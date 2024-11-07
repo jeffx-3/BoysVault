@@ -47,6 +47,20 @@ nav ul li a{
     color: white;
 }
 
+/*Feed nav bar design*/
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    top: 0;
+    padding: 15px;
+    width: 100%;
+
+    position: fixed;
+}
+
 /*hero-section styling*/
 .hero-section{
     display: flex;

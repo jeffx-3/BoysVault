@@ -1,0 +1,43 @@
+{% load static %}
+
+<head>
+    
+    {% block title %} <title>BoysVault|Your Feed</title>{% endblock title %}
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="icon" type="image/png" href="{% static 'images/landing-page(1).png' %}">
+
+    <link href="{% static "feed.css" %}" rel="stylesheet">
+
+</head>
+
+
+<nav>
+
+<div class="logo">
+<h3>Boy<span>Vault</span></h3>
+</div>
+
+<div class="home-input-search">
+    <a href="#"><box-icon name='home-heart'></box-icon></a>
+    <input type="text" placeholder="search something"></input>
+    <button type="submit"><box-icon name='search'></box-icon></button>
+
+</div>
+
+<div class="other-icons">
+    <ul>
+        <li><a href='#'> <box-icon name='conversation' ></box-icon></a></li>
+        <li><a href='#'><box-icon name='podcast' ></box-icon> </a></li>
+        <li><a href='#'> <box-icon name='bell' ></box-icon></a></li>
+        <li><a href='#'><box-icon name='user' ></box-icon> </a></li>
+
+    </ul>
+
+</div>
+</nav>
+
+{% block feed %}
+
+
+{% endblock feed %}
