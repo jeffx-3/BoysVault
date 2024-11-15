@@ -9,7 +9,7 @@ def home(request):
     return render(request, 'index.html')
 
 #feed view
-@login_required
+
 def feed(request):
     return render(request, 'feed.html')
 

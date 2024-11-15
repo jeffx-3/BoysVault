@@ -11,6 +11,8 @@ nav{
     padding: 10px;
     width: 100%;
     background: #F0F8FF;
+    position: fixed;
+    z-index: 1000;
 
 }
 nav h3{
@@ -36,7 +38,7 @@ nav .home-input-search input{
     border-style: none;
     border-radius: 12px;
     width: 350px;
-    padding: 5px;
+    padding: 10px;
     margin-left: 10px;
     margin-right: 3px;
 
@@ -53,15 +55,28 @@ nav .other-icons ul{
     gap: 3rem;
 
 }
+nav .other-icons ul img{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center;
+
+}
 
 /*feed styling*/
 .feed{
     display: grid;
     grid-template-columns: 15% 65% 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 70px;
+    height: 100vh;
+    overflow: hidden;
+
 }
 .feed .short-cuts{
     height: 100vh;
-    overflow: hidden;
 }
 .feed .short-cuts .ul{
     height: 30%;
@@ -70,20 +85,24 @@ nav .other-icons ul{
 .feed .short-cuts .ul ul li{
     display: inline-flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-left: 10%;
     margin-bottom: 20px;
     list-style: none;
+    
     
 
 }
 .feed .short-cuts ul li button{
     display: inline-flex;
+    gap: 0.7rem;
     align-items: center;
     border-style: none;
+    width: 100%;
     background:rgb(207, 105, 202);
     border-radius: 7px;
-    padding: 12px;
+    padding: 10px;
+    font-weight: 400;
 }
 .feed .short-cuts h3{
     text-align: center;
@@ -114,8 +133,153 @@ nav .other-icons ul{
 .feed .short-cuts .settings a{ 
     display: inline-flex;
     align-items: center;
-    margin-right: 2px;
+    gap: 10px;
     margin-left: 10%;
     text-decoration: none;
     color: black;
+}
+
+/*Posts section(grid) styling*/
+.posts {
+    overflow-y: auto; 
+    max-height: 100%; 
+    padding: 10px;
+    height: 100%;
+    margin-left: 5%;
+    width: 80%;
+
+}
+hr{
+    color: grey;
+    width: 80%;
+    margin: 10px auto;
+    opacity: 0.7;
+}
+.posts .upload{
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.posts .upload .user-details{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+    margin-bottom: 5px;
+}
+.posts .upload .user-details h4{
+    font-weight: 550;
+    font-family: "Roboto Condensed", serif;
+}
+.posts .upload .user-details h4 span{
+    font-weight: 400;
+}
+.posts .upload .user-details img{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.posts .upload img{
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+
+}
+.posts .upload img:hover{
+    transform: scale(1.05); 
+    filter: brightness(1); 
+    transition: all 0.3s ease;
+}
+
+.posts .upload p{
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+.posts .upload .icons{
+    width: 100%;
+}
+.posts .upload .icons ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.posts .upload .icons ul li{
+    display: inline-flex;
+    gap: 5px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.posts .upload .icons ul li:hover{
+    transform: scale(1.05); 
+    filter: brightness(1); 
+    transition: all 0.3s ease;
+
+    
+}
+
+.posts .upload video{
+    width: 80%;
+    height: 350;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+
+}
+
+/*Top talks section styling*/
+.top-talks{
+    overflow-y: auto;
+}
+.top-talks h3{
+    text-align: center;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.top-talks .talk{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    background: grey;
+    height: 45px;
+    border-radius: 5px;
+
+}
+.top-talks .talk img{
+    width: 20%;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+.top-talks .talk box-icon:hover{
+    transform: scale(1.05); 
+    filter: brightness(1); 
+    transition: all 0.3s ease;
+
+
 }
